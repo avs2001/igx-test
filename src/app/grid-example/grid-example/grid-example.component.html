@@ -1,0 +1,17 @@
+<igx-grid #exampleGrid primaryKey="id" [data]="(gridData$ | async)!" [batchEditing]="true" [rowEditable]="true">
+  <igx-grid-toolbar>
+    <igx-grid-toolbar-title>Example Grid</igx-grid-toolbar-title>
+    <button igxButton="raised" (click)="newRow()">NEW ROW</button>
+    <button igxButton="raised" (click)="exampleGrid.transactions.clear()">DISCARD</button>
+  </igx-grid-toolbar>
+
+  <igx-column header="Username" field="username"></igx-column>
+  <igx-column header="Email" field="email"></igx-column>
+  <igx-column header="Name" field="name"></igx-column>
+  <igx-column header="City" field="address" [formatter]="addressFormatter">
+    <ng-template igxCellEditor let-cell="cell">
+      <igx-simple-combo [igxFocus]="true" displayKey="city" [data]="addresses" (selectionChanging)="cell.editValue = $event.newSelection"></igx-simple-combo>
+    </ng-template>
+  </igx-column>
+</igx-grid>
+
