@@ -2,6 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GridExampleComponent } from './grid-example/grid-example.component';
 import {IgxActionStripModule, IgxGridModule, IgxSimpleComboModule} from "igniteui-angular";
+import {NewRowDirective} from "../new-row.directive";
+import {ValidatorDirective} from "./validator.directive";
+import {ReactiveFormsModule} from "@angular/forms";
+import {ColumnValidatorDirective} from "./column-validator.directive";
+import {ComboCustomControlDirective} from "./combo-custom-control.directive";
+import {CustomComboComponent} from "./custom-combo/custom-combo.component";
 
 
 
@@ -13,7 +19,13 @@ import {IgxActionStripModule, IgxGridModule, IgxSimpleComboModule} from "igniteu
     CommonModule,
     IgxGridModule,
     IgxActionStripModule,
-    IgxSimpleComboModule
+    IgxSimpleComboModule,
+    NewRowDirective,
+    ValidatorDirective,
+    ReactiveFormsModule,
+    ColumnValidatorDirective,
+    ComboCustomControlDirective,
+    CustomComboComponent
   ],
   exports: [
     GridExampleComponent

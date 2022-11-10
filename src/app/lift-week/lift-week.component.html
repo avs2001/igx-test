@@ -1,0 +1,10 @@
+<igx-input-group>
+  <input #input type="number" min="0" max="12" igxInput [formControl]="control">
+</igx-input-group>
+<div igxToggle>
+  <div *ngFor="let wkControl of controls;">
+    <igx-input-group>
+      <input igxInput type="number" [formControl]="wkControl">
+    </igx-input-group>
+  </div>
+</div>

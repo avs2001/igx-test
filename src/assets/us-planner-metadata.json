@@ -1,0 +1,2983 @@
+{
+  "metadata": [
+    {
+      "code": "assortmentDueDate",
+      "name": "ASST DUE DATE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAssortmentCheck",
+      "name": "US BM ASST CHECK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAssortmentCheck",
+      "name": "DOTCOM ASST CHECK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAssortmentCheck",
+      "name": "CAN BM ASST CHECK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAssortmentCheck",
+      "name": "DOTCA ASST CHECK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmPoReady",
+      "name": "US B&M PO Ready",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomPoReady",
+      "name": "DOTCOM PO Ready",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmPoReady",
+      "name": "CA B&M PO Ready",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaPoReady",
+      "name": "DotCA PO Ready",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmPoPlaced",
+      "name": "US BM PO PLACED",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomPoPlaced",
+      "name": "DOTCOM PO PLACED",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmPoPlaced",
+      "name": "CAN BM PO PLACED",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaPoPlaced",
+      "name": "DOTCA PO PLACED",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "launchStatus",
+      "name": "LAUNCH STATUS",
+      "masterListId": "LAUNCH_STATUS",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "launchType",
+      "name": "Launch Type",
+      "masterListId": "MERCH_LAUNCH_TYPE",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "hardLaunch",
+      "name": "HARD LAUNCH?",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "vendorShipDate",
+      "name": "VENDOR SHIP DATE",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "overridePoTargetPlaceDate",
+      "name": "Override PO TARGET PLACE DATE",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "poTargetPlaceDate",
+      "name": "PO TARGET PLACE DATE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "merlinInDcDateCalculated",
+      "name": "MERLIN IN DC DATE (4 WEEKS PRIOR TO .COM LIVE DATE)",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "merlinInDcDateConverted",
+      "name": "MERLIN IN DC DATE",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "season",
+      "name": "SEASON",
+      "masterListId": "season",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usPlannedInStoreDate",
+      "name": "US PLANNED IN STORE DATE",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLiveDate",
+      "name": "DOTCOM Live Date",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caPlannedInStoreDate",
+      "name": "CAN PLANNED IN STORE DATE",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLiveDate",
+      "name": "DOTCA Live Date",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "managedCountry",
+      "name": "Managed Country",
+      "masterListId": "MANAGED_COUNTRY",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "department",
+      "name": "Dept",
+      "masterListId": "department",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "class",
+      "name": "Class",
+      "masterListId": "class",
+      "type": "ENUM",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "brand",
+      "name": "Brand",
+      "masterListId": "brand",
+      "type": "ENUM",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "sephoraSku",
+      "name": "SEPHORA SKU",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "brandSkuDescription",
+      "name": "BRAND SKU DESCRIPTION",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "upc",
+      "name": "UPC",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "orderMultiple",
+      "name": "Order Multiple",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "costUsd",
+      "name": "Cost (USD)",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usRetailUsd",
+      "name": "US Retail (USD)",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "brandMargin",
+      "name": "Brand Margin",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caRetailCad",
+      "name": "CA Retail (CAD)",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usValueUsd",
+      "name": "US Value (USD)",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usValuePercent",
+      "name": "US Value %",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caValueCad",
+      "name": "CAN Value (CAD)",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caValuePercent",
+      "name": "CAN Value %",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "coreOrLimited",
+      "name": "Core or Limited",
+      "masterListId": "CORE_LIMITED",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmWeeksOfLife",
+      "name": "B&M Total Weeks of Life (52 for Core, Enter # of weeks for Limited)",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomWeeksOfLife",
+      "name": "Dotcom Total Weeks of Life (52 for Core, Enter # of weeks for Limited)",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmWeeksOfLife",
+      "name": "CAN BM WOL (52 for Core, Enter # of weeks for Limited)",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaWeeksOfLife",
+      "name": "DOTCA WOL (52 for Core, Enter # of weeks for Limited)",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmDist",
+      "name": "US B&M DIST",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomDist",
+      "name": "DOTCOM DIST",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmDist",
+      "name": "CAN B&M DIST",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaDist",
+      "name": "DOTCA DIST",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "repackOrReform",
+      "name": "REPACK OR REFORM",
+      "masterListId": "REPACK_REFORM",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "exitSku",
+      "name": "Exit Sku",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "collection",
+      "name": "COLLECTION",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "npdSubclass",
+      "name": "NPD Subclass",
+      "masterListId": "npdSubclass",
+      "type": "ENUM",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "subclass",
+      "name": "Subclass",
+      "masterListId": "subclass",
+      "type": "ENUM",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "category",
+      "name": "Category",
+      "masterListId": "MERCH_CATEGORY",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "shade",
+      "name": "Shade",
+      "masterListId": "MERCH_SHADE",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "brandDistributionType",
+      "name": "Brand Distribution Type",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "exclusive",
+      "name": "Exclusive",
+      "masterListId": "MERCH_EXCLUSIVE",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "companyInitiative1",
+      "name": "Company Initiative 1",
+      "masterListId": "COMPANY_INITIATIVE_1",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "companyIntiative2",
+      "name": "Company Intiative 2",
+      "masterListId": "COMPANY_INITIATIVE_2",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "departmentInitiative",
+      "name": "Department Initiative",
+      "masterListId": "DEPARTMENT_INITIATIVE",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "launchStrategy",
+      "name": "Launch Strategy (SHN, Launch Space, RB BTQ, ETC)",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "assortment",
+      "name": "Assortment",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usDoorCount",
+      "name": "US DOOR COUNT",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "actualUsDoorCount",
+      "name": "Actual US DOOR COUNT",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caDoorCount",
+      "name": "CAN DOOR COUNT",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "actualCaDoorCount",
+      "name": "Actual CAN DOOR COUNT",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalDoorCount",
+      "name": "TOTAL DOOR COUNT",
+      "type": "long ",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "homebayFacings",
+      "name": "Homebay Facings",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "homebayPq",
+      "name": "Homebay PQ (RED if greater than 2)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "tester",
+      "name": "Tester",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "compSkuUpcNumber",
+      "name": "Comp SKU UPC Number",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "compSkuNumber",
+      "name": "Comp SKU Number",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "compSkuDesc",
+      "name": "Comp SKU Desc",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "compPercent",
+      "name": "Comp %",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "compNotes",
+      "name": "Comp Notes",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "merchantComments",
+      "name": "Merchant Comments",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "setContents",
+      "name": "Set Contents",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "plannerComments",
+      "name": "Planner Comments",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomComments",
+      "name": "Dotcom Comments",
+      "type": "string",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "averageUsBmMonthlySalesUsdEntered",
+      "name": "Avg US B&M Monthly Sales $ Entered",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "averageUsBmMonthlySalesEntered",
+      "name": "Avg US B&M Monthly Sales Entered",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmApsEntered",
+      "name": "US B&M APS Entered",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedUsBmBuyForecast",
+      "name": "Limited US B&M Buy - Forecast",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAps",
+      "name": "US B&M APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "frameUsBmAps",
+      "name": "FRAME US B&M APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "averageDotcomMonthlySalesEntered",
+      "name": "Avg DOTCOM Monthly Sales $ Entered",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "averageUsDotcomMonthlySalesEntered",
+      "name": "Avg US DOTCOM Monthly Sales Entered",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomApsEntered",
+      "name": "DOTCOM APS Entered",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedDotcomBuyForecast",
+      "name": "Limited DOTCOM Buy - Forecast",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAps",
+      "name": "DOTCOM APS",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "frameDotcomAps",
+      "name": "FRAME DOTCOM APS",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "averageCaBmMonthlySalesUsdEntered",
+      "name": "Avg CAN B&M Monthly Sales $ (USD) Entered",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "averageCaBmMonthlySalesEntered",
+      "name": "Avg CAN B&M Monthly Sales Entered",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmApsEntered",
+      "name": "CAN B&M APS Entered",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedCaBmBuyForecast",
+      "name": "Limited CAN B&M Buy - Forecast",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAps",
+      "name": "CAN BM APS",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "frameCaBmAps",
+      "name": "FRAME CAN B&M APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "averageDotcaMonthlySalesUsdEntered",
+      "name": "Avg DOTCA Monthly Sales $ (USD) Entered",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "averageDotcaMonthlySalesEntered",
+      "name": "Avg DOTCA Monthly Sales Entered",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaApsEntered",
+      "name": "DOTCA APS Entered",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedDotcaBuyForecast",
+      "name": "Limited DOTCA Buy - Forecast",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAps",
+      "name": "DOTCA APS (if US-Managed)",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "frameDotcaAps",
+      "name": "FRAME DOTCA APS",
+      "type": "double",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomToTotalUsPenetration",
+      "name": ".COM to Total US PENETRATION",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaToTotalCaPenetration",
+      "name": ".CA to Total CAN PENETRATION",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caToTotalNaPenetration",
+      "name": "Canada to Total NA PENETRATION",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmChannelProfile",
+      "name": "US B&M CHANNEL PROFILE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomChannelProfile",
+      "name": "Dotcom CHANNEL PROFILE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmChannelProfile",
+      "name": "CAN B&M CHANNEL PROFILE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaChannelProfile",
+      "name": "DOTCA CHANNEL PROFILE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "manageLaunchLiftByWeek",
+      "name": "Manage Launch Lift By Week",
+      "masterListId": "LAUNCH_LIFT_BY_WEEK",
+      "type": "ENUM_SHORT",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmNumberOfWeeksFromLaunch",
+      "name": "USB&M Number of Weeks from Launch",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLaunchLiftPercent",
+      "name": "US B&M Launch Lift %",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLaunchLiftUnits",
+      "name": "US B&M Launch Lift Units",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLaunchLiftUnitsFromFrame",
+      "name": "US B&M Launch Lift Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomNumberOfWeeksFromLaunch",
+      "name": "DOTCOM Number of Weeks from Launch",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLaunchLiftPercent",
+      "name": "DOTCOM Launch Lift %",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLaunchLiftUnits",
+      "name": "DOTCOM Launch Lift Units",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLaunchLiftUnitsFromFrame",
+      "name": "DOTCOM Launch Lift Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmNumberOfWeeksFromLaunch",
+      "name": "CAN B&M Number of Weeks from Launch",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLaunchLiftPercent",
+      "name": "CAN B&M Launch Lift %",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLaunchLiftUnits",
+      "name": "CAN B&M Launch Lift Units",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLaunchLiftUnitsFromFrame",
+      "name": "CAN B&M Launch Lift Units from Frame",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaNumberOfWeeksFromLaunch",
+      "name": "DOTCA Number of Weeks from Launch",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLaunchLiftPercent",
+      "name": "DOTCA Launch Lift %",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLaunchLiftUnits",
+      "name": "DOTCA Launch Lift Units",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLaunchLiftUnitsFromFrame",
+      "name": "DOTCA Launch Lift Units from Frame",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalLiftUnits",
+      "name": "Total Lift Units",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalLiftUnitsFromFrame",
+      "name": "Total Lift Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "launchingWithAnimation",
+      "name": "Launching with Animation?",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "animationName",
+      "name": "Animation Name",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationStart",
+      "name": "US Animation START",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationEnd",
+      "name": "US Animation END",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "manageUsAndCaAnimationSeperately",
+      "name": "Manage US and CAN Animation Seperately?",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationStart",
+      "name": "CAN Animation START",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationEnd",
+      "name": "CAN Animation END",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "animationLiftPercentUsBm",
+      "name": "Animation LIFT %US B&M",
+      "type": "Double",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationDoors",
+      "name": "US Animation Doors",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationPq",
+      "name": "US Animation PQ",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationLift",
+      "name": "US Animation Lift",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationLiftUsd",
+      "name": "US Animation Lift $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usAnimationLiftUnitsFromFrame",
+      "name": "US Animation Lift Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "animationLiftCaBm",
+      "name": "Animation LIFT CAN B&M",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationDoors",
+      "name": "CAN Animation Doors",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationPq",
+      "name": "CAN Animation PQ",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationLift",
+      "name": "CAN Animation Lift",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationLiftUsd",
+      "name": "CA Animation Lift $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caAnimationLiftUnitsFromFrame",
+      "name": "CA Animation Lift Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalAnimationLift",
+      "name": "Total Animation Lift",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalAnimationLiftUsd",
+      "name": "Total Animation Lift $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalAnimationLiftFrame",
+      "name": "Total Animation Lift FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "planBiLift",
+      "name": "Plan BI Lift Default to NO",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftStart",
+      "name": "BI LIFT START",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftEnd",
+      "name": "BI LIFT END",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftPercentUsBm",
+      "name": "BI LIFT% US B&M",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftUsBm",
+      "name": "BI LIFT US B&M",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmBiLiftUnitsFromFrame",
+      "name": "US B&M BI LIFT Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftPercentDotcom",
+      "name": "BI LIFT %DOTCOM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftDotcomBm",
+      "name": "BI LIFT DOTCOM B&M",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomBiLiftUnitsFromFrame",
+      "name": "DOTCOM BI LIFT Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftPercentCaBm",
+      "name": "BI LIFT% CAN B&M",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftCaBm",
+      "name": "BI LIFT CAN B&M",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmBiLiftUnitsFromFrame",
+      "name": "CA B&M BI LIFT Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftPercentDotca",
+      "name": "BI LIFT% DOTCA",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "biLiftDotca",
+      "name": "BI LIFT DOTCA",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaBiLiftUnitsFromFrame",
+      "name": "DOTCA BI LIFT Units from FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBiLift",
+      "name": "TOTAL BI LIFT",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBiLiftFrame",
+      "name": "TOTAL BI LIFT FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "overrideUsBmLikeItem",
+      "name": "Override US B&M LIKE ITEM",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLikeItem",
+      "name": "US BM LIKE ITEM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLikeItemDesc",
+      "name": "US BM LIKE ITEM DESC",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLikeItemRank",
+      "name": "US BM LIKE ITEM RANK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmLikeItemCompAps",
+      "name": "US BM LIKE ITEM COMP APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmScalingFactor",
+      "name": "US BM SCALING FACTOR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "overrideDotcomLikeItem",
+      "name": "Override DOTCOM LIKE ITEM",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLikeItem",
+      "name": "DOTCOM LIKE ITEM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLikeItemDesc",
+      "name": "DOTCOM LIKE ITEM DESC",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLikeItemRank",
+      "name": "DOTCOM LIKE ITEM RANK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomLikeItemCompAps",
+      "name": "DOTCOM LIKE ITEM COMP APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomScalingFactor",
+      "name": "DOTCOM SCALING FACTOR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "overrideCaBmLikeItem",
+      "name": "Override CAN B&M LIKE ITEM",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLikeItem",
+      "name": "CAN BM LIKE ITEM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLikeItemDesc",
+      "name": "CAN BM LIKE ITEM DESC",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLikeItemRank",
+      "name": "CAN BM LIKE ITEM RANK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmLikeItemCompAps",
+      "name": "CAN BM LIKE ITEM COMP APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmScalingFactor",
+      "name": "CAN BM SCALING FACTOR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "overrideDotcaLikeItem",
+      "name": "Override DOTCA LIKE ITEM",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLikeItem",
+      "name": "DOTCA LIKE ITEM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLikeItemDesc",
+      "name": "DOTCA LIKE ITEM DESC",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLikeItemRank",
+      "name": "DOTCA LIKE ITEM RANK",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaLikeItemCompAps",
+      "name": "DOTCA LIKE ITEM COMP APS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaScalingFactor",
+      "name": "DOTCA SCALING FACTOR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "readyToSendToFrameReadyToForecast",
+      "name": "READY TO SEND TO FRAME - READY TO FORECAST",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedSkuUsBmGoalSellThruPercent",
+      "name": "Limited SKU US B&M Goal Sell-Thru %",
+      "type": "float",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedSkuDotcomGoalSellThruPercent",
+      "name": "Limited SKU Dotcom Goal Sell-Thru %",
+      "type": "float",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedSkuCaBmGoalSellThruPercent",
+      "name": "Limited SKU CAN B&M Goal Sell-Thru %",
+      "type": "float",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedSkuDotcaGoalSellThruPercent",
+      "name": "Limited SKU Dotca Goal Sell-Thru %",
+      "type": "float",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedUsBmSellThruSuggestedBuy",
+      "name": "Limited US B&M Sell-Thru Suggested Buy",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedDotcomSellThruSuggestedBuy",
+      "name": "Limited DOTCOM Sell-Thru Suggested Buy",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedCaBmSellThruSuggestedBuy",
+      "name": "Limited CA B&M Sell-Thru Suggested Buy",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedDotcaSellThruSuggestedBuy",
+      "name": "Limited DOTCA Sell-Thru Suggested Buy",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalLimitedSellThruSuggestedBuy",
+      "name": "Total Limited Sell-Thru Suggested Buy",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedUsBmSellThruUnits",
+      "name": "Limited US B&M Sell-Thru Units",
+      "type": "long",
+      "optional": true,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedDotcomSellThruUnits",
+      "name": "Limited DOTCOM Sell-Thru Units",
+      "type": "long",
+      "optional": true,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedCaBmSellThruUnits",
+      "name": "Limited CAN B&M Sell-Thru Units",
+      "type": "long",
+      "optional": true,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "limitedDotcaSellThruUnits",
+      "name": "Limited DOTCA Sell-Thru Units",
+      "type": "long",
+      "optional": true,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalLimitedSellThruUnits",
+      "name": "Total Limited Sell-Thru Units",
+      "type": "long",
+      "optional": true,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "overrideOrderGroupCalendar",
+      "name": "Override Order Group / Calendar",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmInitialWeeksOfSale",
+      "name": "US B&M Initial WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmReplen1WeeksOfSale",
+      "name": "REPLEN 1 WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmReplen2WeeksOfSale",
+      "name": "REPLEN 2 WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmNewnessOrderGroup",
+      "name": "US B&M NEWNESS ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmNewnessOrderCalendar",
+      "name": "US B&M NEWNESS ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmHoldOrderGroup",
+      "name": "US B&M HOLD ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmHoldOrderCalendar",
+      "name": "US B&M HOLD ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomInitialWeeksOfSale",
+      "name": "Dotcom Initial WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomReplen1WeeksOfSale",
+      "name": "Dotcom Replen 1 WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomReplen2WeeksOfSale",
+      "name": "Dotcom Replen 2 WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomNewnessOrderGroup",
+      "name": "DOTCOM NEWNESS ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomNewnessOrderCalendar",
+      "name": "DOTCOM NEWNESS ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomHoldOrderGroup",
+      "name": "DOTCOM HOLD ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomHoldOrderCalendar",
+      "name": "DOTCOM HOLD ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmInitialWeeksOfSale",
+      "name": "CAN B&M Initial WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmReplen1WeeksOfSale",
+      "name": "REPLEN 1 WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmReplen2WeeksOfSale",
+      "name": "REPLEN 2 WOS",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmNewnessOrderGroup",
+      "name": "CA B&M NEWNESS ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmNewnessOrderCalendar",
+      "name": "CA B&M NEWNESS ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmHoldOrderGroup",
+      "name": "CA B&M HOLD ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmHoldOrderCalendar",
+      "name": "CA B&M HOLD ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaInitialWeeksOfSale",
+      "name": "Dotca WOS (defaults to 0 for no .ca APS; .com WOS if .ca APS)",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaReplen1WeeksOfSale",
+      "name": "Dotca Replen 1 WOS (defaults to 0 if no .ca APS; .com WOS if .ca APS)",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaReplen2WeeksOfSale",
+      "name": "Dotca Replen 2 WOS (defaults to 0 if no .ca APS; .com WOS if .ca APS)",
+      "type": "integer",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaNewnessOrderGroup",
+      "name": "DOTCA NEWNESS ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaNewnessOrderCalendar",
+      "name": "DOTCA NEWNESS ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaHoldOrderGroup",
+      "name": "DOTCA HOLD ORDER GROUP",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaHoldOrderCalendar",
+      "name": "DOTCA HOLD ORDER CALENDAR",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "readyToSendToFrameReadyForOrderOpt",
+      "name": "READY TO SEND TO FRAME - READY FOR ORDER OPT",
+      "type": "Boolean",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "merlinInDcDateReplen1",
+      "name": "MERLIN IN DC DATE REPLEN 1",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "merlinInDcDateReplen2",
+      "name": "MERLIN IN DC DATE REPLEN 2",
+      "type": "Date",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmBrandCommunicatedQuantity",
+      "name": "US B&M Brand Communicated Quantity",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomBrandCommunicatedQuantity",
+      "name": "DOTCOM Brand Communicated Quantity",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmBrandCommunicatedQuantity",
+      "name": "CA B&M Brand Communicated Quantity",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaBrandCommunicatedQuantity",
+      "name": "DOTCA Brand Communicated Quantity",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBrandCommunicatedQuantity",
+      "name": "Total Brand Communicated Quantity",
+      "type": "long",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBuy",
+      "name": "TOTAL BUY",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBuyFrame",
+      "name": "TOTAL BUY FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaBm",
+      "name": "TOTAL NA BM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaBmFrame",
+      "name": "TOTAL NA BM FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaDotcom",
+      "name": "TOTAL NA DOTCOM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaDotcomFrame",
+      "name": "TOTAL NA DOTCOM FRAME",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUs",
+      "name": "TOTAL US",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsBm",
+      "name": "TOTAL US BM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsDotcom",
+      "name": "TOTAL US DOTCOM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCa",
+      "name": "TOTAL CA",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaBm",
+      "name": "TOTAL CA BM",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalDotca",
+      "name": "TOTAL DOTCA",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaInitial",
+      "name": "TOTAL NA INITIAL",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmInitial",
+      "name": "US BM INITIAL",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomInitial",
+      "name": "DOTCOM INITIAL",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmInitial",
+      "name": "CAN BM INITIAL",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaXdockInitial",
+      "name": ".CA XDOCK INITIAL",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaWave2",
+      "name": "TOTAL NA WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBmWave2",
+      "name": "TTL BM WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalDotcomWave2",
+      "name": "TTL DOTCOM WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmWave2",
+      "name": "US BM WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomWave2",
+      "name": "DOTCOM WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmWave2",
+      "name": "CAN BM WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caXdockWave2",
+      "name": ".CA XDOCK WAVE 2",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaWave3",
+      "name": "TOTAL NA WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBmWave3",
+      "name": "TOTAL BM WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalDotcomWave3",
+      "name": "TOTAL DOTCOM WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmWave3",
+      "name": "US BM WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomWave3",
+      "name": "DOTCOM WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmWave3",
+      "name": "CAN BM WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caXdockWave3",
+      "name": ".CA XDOCK WAVE 3",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalInitialBuyCost",
+      "name": "TOTAL INITIAL BUY COST",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalReplen1Cost",
+      "name": "TOTAL REPLEN 1 COST",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalReplen2Cost",
+      "name": "TOTAL REPLEN 2 COST",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalBuyCost",
+      "name": "TOTAL BUY COST",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalFrameBuyCost",
+      "name": "TOTAL FRAME BUY COST",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAurShave",
+      "name": "US B&M AUR SHAVE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAurShave",
+      "name": "DOTCOM AUR SHAVE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAurShave",
+      "name": "CA B&M AUR SHAVE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAurShave",
+      "name": "DOTCA AUR SHAVE",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": false,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaAverageWeeklySalesForecastUsd",
+      "name": "TTL NA AVG WKLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaAverageWeeklySalesForecastUnits",
+      "name": "TTL NA AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaAverageMonthlySalesForecastUsd",
+      "name": "TTL NA AVG MNTHLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaAverageMonthlySalesForecastUnits",
+      "name": "TTL NA AVG MNTHLY SLS FCST  UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsAverageWeeklySalesForecastUsd",
+      "name": "TTL US AVG WKLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsAverageWeeklySalesForecastUnits",
+      "name": "TTL US AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsAverageMonthlySalesForecastUsd",
+      "name": "TTL US AVG MNTHLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsAverageMonthlySalesForecastUnits",
+      "name": "TTL US AVG MNTHLY SLS FCST  UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAverageWeeklySalesForecastUsd",
+      "name": "US B&M AVG WKLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAverageWeeklySalesForecastUnits",
+      "name": "US B&M AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAverageMonthlySalesForecastUsd",
+      "name": "US B&M AVG MNTHLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAverageMonthlySalesForecastUnits",
+      "name": "US B&M AVG MNTHLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAverageWeeklySalesForecastUsd",
+      "name": ".COM AVG WKLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAverageWeeklySalesForecastUnits",
+      "name": ".COM AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAverageMonthlySalesForecastUsd",
+      "name": ".COM AVG MNTHLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAverageMonthlySalesForecastUnits",
+      "name": ".COM AVG MNTHLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaAverageWeeklySalesForecastUsd",
+      "name": "TTL CAN AVG WKLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaAverageWeeklySalesForecastUnits",
+      "name": "TTL CAN AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaAverageMonthlySalesForecastUsd",
+      "name": "TTL CAN AVG MNTHLY SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaAverageMonthlySalesForecastUnits",
+      "name": "TTL CAN AVG MNTHLY SLS FCST  UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAverageWeeklySalesForecastUsd",
+      "name": "CAN B&M AVG WKLY SLS FCST $ (USD)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAverageWeeklySalesForecastUnits",
+      "name": "CAN B&M AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAverageMonthlySalesForecastUsd",
+      "name": "CAN B&M AVG MNTHLY SLS FCST $ (USD)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAverageMonthlySalesForecastUnits",
+      "name": "CAN B&M AVG MNTHLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAverageWeeklySalesForecastUsd",
+      "name": "DOTCA AVG WKLY SLS FCST $ (USD)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAverageWeeklySalesForecastUnits",
+      "name": "DOTCA AVG WKLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAverageMonthlySalesForecastUsd",
+      "name": "DOTCA AVG MNTHLY SLS FCST $ (USD)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAverageMonthlySalesForecastUnits",
+      "name": "DOTCA AVG MNTHLY SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaAverageMonthlyLaunchSalesForecastUsd",
+      "name": "TTL NA AVG MNTHLY LAUNCH SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalNaAverageMonthlyLaunchSalesForecastUnits",
+      "name": "TTL NA AVG MNTHLY LAUNCH SLS FCST  UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsAverageMonthlyLaunchSalesForecastUsd",
+      "name": "TTL US AVG MNTHLY LAUNCH SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalUsAverageMonthlyLaunchSalesForecastUnits",
+      "name": "TTL US AVG MNTHLY LAUNCH SLS FCST  UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAverageMonthlyLaunchSalesForecastUsd",
+      "name": "US B&M AVG MNTHLY LAUNCH SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "usBmAverageMonthlyLaunchSalesForecastUnits",
+      "name": "US B&M AVG MNTHLY LAUNCH SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAverageMonthlyLaunchSalesForecastUsd",
+      "name": ".COM AVG MNTHLY LAUNCH SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcomAverageMonthlyLaunchSalesForecastUnits",
+      "name": ".COM AVG MNTHLY LAUNCH SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaAverageMonthlyLaunchSalesForecastUsd",
+      "name": "TTL CAN AVG MNTHLY LAUNCH SLS FCST $",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "totalCaAverageMonthlyLaunchSalesForecastUnits",
+      "name": "TTL CAN AVG MNTHLY LAUNCH SLS FCST  UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAverageMonthlyLaunchSalesForecastUsd",
+      "name": "CAN B&M AVG MNTHLY LAUNCH SLS FCST $ (USD)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "caBmAverageMonthlyLaunchSalesForecastUnits",
+      "name": "CAN B&M AVG MNTHLY LAUNCH SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAverageMonthlyLaunchSalesForecastUsd",
+      "name": "DOTCA AVG MNTHLY LAUNCH SLS FCST $ (USD)",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    },
+    {
+      "code": "dotcaAverageMonthlyLaunchSalesForecastUnits",
+      "name": "DOTCA AVG MNTHLY LAUNCH SLS FCST UNITS",
+      "type": "String",
+      "optional": false,
+      "searchable": false,
+      "calculated": true,
+      "displayOnly": false
+    }
+  ]
+}
