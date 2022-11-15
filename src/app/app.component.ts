@@ -1,12 +1,15 @@
-import {Component, inject} from '@angular/core';
-import {map} from "rxjs";
+import {Component, inject, OnInit} from '@angular/core';
+import {map, tap} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 
 export const TypeMap = new Map([
   ['String', 'string'],
   ['Boolean', 'boolean'],
   ['Long', 'number'],
+  ['Int', 'number'],
+  ['Float', 'number'],
   ['Double', 'number'],
   ['Date', 'date'],
   ['ENUM', null],
@@ -18,10 +21,13 @@ export const ModelType = new Map([
   ['String', 'string'],
   ['Boolean', 'boolean'],
   ['Long', 'number'],
+  ['Int', 'number'],
+  ['Float', 'number'],
   ['Double', 'number'],
   ['Date', 'Date'],
   ['ENUM', 'BaseMasterListItem'],
   ['ENUM_SHORT', 'BaseMasterListItem'],
+  ['WEEK_LIFT', 'NumberOfWeeksFromLaunch'],
   ['TYPEAHEAD', 'string'],
 ]);
 
@@ -30,11 +36,11 @@ export const ModelType = new Map([
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   private readonly http = inject(HttpClient);
 
   get metadata() {
-    return this.http.get<{ metadata: any[] }>(`/assets/us-planner-metadata.json`).pipe(
+    return this.http.get<{ metadata: any[] }>(`/assets/us-merchant-metadata.json`).pipe(
       map(({metadata}) => metadata)
     );
   }
@@ -55,6 +61,7 @@ export class AppComponent {
   }
 
   fields$ = this.metadata.pipe(
+    tap((meta) => console.log(meta.length)),
     map((meta) => meta.map(m => {
       return `<igx-column header="${m.name}" field="${m.code}" ${this.getType(m.type)} ${this.getEditable(m.displayOnly)}></igx-column>`
     }).join('\n'))
@@ -77,5 +84,21 @@ export class AppComponent {
       return meta.map(m => `${m.code}:${this.getModelType(m.type)};`).join('\n');
     })
   );
+  form = new FormGroup({
+    a: new FormControl(null, {
+      validators: Validators.compose([
+        Validators.email,
+        Validators.min(10),
+        Validators.max(100)
+      ])
+    })
+  });
+
+  ngOnInit(): void {
+    this.form.valueChanges.subscribe(() => {
+      console.log(this.form.controls.a.errors);
+    })
+  }
+
 
 }

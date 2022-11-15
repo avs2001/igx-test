@@ -7,6 +7,7 @@ import {GridExampleModule} from "./grid-example/grid-example.module";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LiftWeekComponent} from "./lift-week/lift-week.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {LiftWeekComponent} from "./lift-week/lift-week.component";
         HttpClientModule,
         BrowserAnimationsModule,
         AppRoutingModule,
-        LiftWeekComponent
+        LiftWeekComponent,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
